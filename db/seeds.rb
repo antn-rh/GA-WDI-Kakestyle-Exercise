@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+garments = Garment.create ([
+  {name: 'hoodie', color: 'red', material: 'cotton', price: 30.0, waterproof: false}
+  {name: 'janes', color: 'blue', material: 'denim', price: 50.0, waterproof: false}
+  {name: 'raincoat', color: 'black', material: 'polyester', price: 80.0, waterproof: true}
+  ])
