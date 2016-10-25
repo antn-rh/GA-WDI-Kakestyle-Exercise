@@ -29,7 +29,7 @@ before_action :set_garment, only: [:show, :edit, :update, :destroy]
     if @garment.update_attributes(garment_params)
       redirect_to @garment
     else
-      render: edit
+      render :edit
     end
   end
 

@@ -1,2 +1,27 @@
-<h1>Garments#edit</h1>
-<p>Find me in app/views/garments/edit.html.erb</p>
+<h1>Edit this garment</h1>
+
+<%= form_for @garment do |f| %>
+  <div>
+    <%= f.label :name %>:
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :color %>:
+    <%= f.text_field :color %>
+  </div>
+  <div>
+    <%= f.label :material %>:
+    <%= f.text_field :material %>
+  </div>
+  <div>
+    <%= f.label :price %>:
+    <%= f.number_field :price %>
+  </div>
+  <div>
+    <%= f.label :waterproof %>:
+    <%= f.check_box :waterproof %>
+  </div>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Back to main', garments_path %>

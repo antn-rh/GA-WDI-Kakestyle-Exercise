@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'garments#index'
 
   get 'garments/' => 'garments#index'
   get 'garments/new' => 'garments#new', as: :new_garment

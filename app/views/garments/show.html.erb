@@ -1,2 +1,19 @@
-<h1>Garments#show</h1>
-<p>Find me in app/views/garments/show.html.erb</p>
+<h1> KakeStyle <%= @garment.name.capitalize %> </h1>
+
+<ul>
+  <li style="list-style: none;">
+    Color: <%= @garment.color %>
+    <br>
+    Material: <%= @garment.material %>
+    <br>
+    Price: <%= @garment.price %>
+    <br>
+    Waterproof: <%= @garment.waterproof %>
+  </li>
+</ul>
+
+<%= link_to 'Back to main', garments_path %>
+<br>
+<%= link_to 'Edit this garment', edit_garment_path %>
+<br>
+<%= link_to 'Delete this garment', garments_path, method: :delete, data: {confirm: 'Are you sure?'} %>
