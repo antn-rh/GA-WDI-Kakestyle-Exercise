@@ -2,6 +2,8 @@
 
 <ul>
   <li style="list-style: none;">
+    <%= image_tag @garment.image.url(:small) %>
+    <br>
     Color: <%= @garment.color %>
     <br>
     Material: <%= @garment.material %>

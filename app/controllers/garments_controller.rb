@@ -44,6 +44,6 @@ private
   end
 
   def garment_params
-    params.require(:garment).permit(:name, :color, :material, :price, :waterproof)
+    params.require(:garment).permit(:name, :color, :material, :price, :waterproof, :image)
   end
 end
